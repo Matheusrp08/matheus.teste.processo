@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<head><meta charset="UTF-8" /></head>
+<body>			
+	<section class="layout-content" layout:fragment="corpo">
+	
+		<nav class="navbar navbar-expand-md bg-light">
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<i class="oi oi-caret-right"></i>
+						<span>Cadastro de Processo</span>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		
+		<div class="container">
+			<div id="list-home" class="row">
+				<div class="col-4">
+					<div class="list-group" id="list-tab" role="tablist">
+					
+							<a class="list-group-item list-group-item-action active"
+							id="list-spring-boot-list" data-toggle="list" th:href="@{#spring-boot}"
+							role="tab" aria-controls="spring-boot">Soluções Jurídicas</a>
+							
+							<a class="list-group-item list-group-item-action" id="list-sts-list"
+							data-toggle="list" th:href="@{#sts}" role="tab" aria-controls="sts">
+							Redução dos Custos</a> 
+							
+							<a class="list-group-item list-group-item-action"
+							id="list-thymeleaf-list" data-toggle="list" th:href="@{#thymeleaf}"
+							role="tab" aria-controls="thymeleaf">Transparência no Serviço</a> 				
+					</div>
+				</div>
+				<div class="col-8">
+					<div class="tab-content" id="nav-tabContent">
+						<div class="tab-pane fade show active" id="spring-boot"
+							role="tabpanel" aria-labelledby="list-spring-boot-list">
+							<a href="https://projects.spring.io/spring-boot/">Info:</a>
+							Através de soluções jurídicas é possível otimizar as ações do dia a dia do advogado. Afinal, 
+							ferramentas tecnológicas otimizam atividades mais burocráticas 
+							o que permite que o advogado tenha mais tempo para atividades analíticas. Desse modo,
+							 isso se reflete no aumento da produtividade e da eficiência de seu desempenho.
+						</div>
+						<div class="tab-pane fade" id="sts" role="tabpanel"
+							aria-labelledby="list-sts-list">
+							<a href="https://spring.io/tools">Info:</a> Com os 
+							softwares jurídicos desenvolvidos pelas lawtechs é 
+							possível reduzir as despesas nos orçamentos dos escritórios.
+							Afinal, com a implementação de tecnologia é possível diminuir a
+							aquisição de materiais e equipamentos, 
+							como papel timbrado, dentre outros.
+						</div>
+						<div class="tab-pane fade" id="thymeleaf" role="tabpanel"
+							aria-labelledby="list-thymeleaf-list">
+							<a href="http://www.thymeleaf.org/">Info:</a> 
+							Outra grande vantagem é que a tecnologia possibilita a 
+							sistematização de serviços e transparência de informações.
+							Ou seja, o sistema jurídico se torna mais
+							 acessível para todos.
+						</div>
+						<div class="tab-pane fade" id="webjars" role="tabpanel"
+							 aria-labelledby="list-webjars-list">
+							<a href="https://www.webjars.org/">WebJars</a> are client-side
+							web libraries (e.g. jQuery ; Bootstrap) packaged into JAR (Java
+							Archive) files.
+						</div>
+										
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>		
+</body>
+</html>
